@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+    <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,104 +13,142 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f5f5f5;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.8;
+            color: #2c3e50;
+            background-color: #fafafa;
+            background-image: 
+                radial-gradient(circle at 20% 50%, rgba(120, 119, 198, 0.03) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(255, 119, 198, 0.03) 0%, transparent 50%);
         }
 
         header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 4rem 2rem;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.06) 0%, rgba(118, 75, 162, 0.06) 100%);
+            border-bottom: 1px solid #e8e8e8;
+            padding: 3rem 2rem 2rem;
             text-align: center;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
         }
 
         header h1 {
-            font-size: 3rem;
-            font-weight: 700;
+            font-size: 2.5rem;
+            font-weight: 600;
             margin-bottom: 0.5rem;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            color: #1a1a1a;
+            letter-spacing: -0.5px;
         }
 
         header p {
-            font-size: 1.3rem;
-            opacity: 0.95;
-            font-weight: 300;
+            font-size: 1.1rem;
+            color: #666;
+            font-weight: 400;
+            font-style: italic;
         }
 
         .container {
-            max-width: 900px;
+            max-width: 800px;
             margin: 0 auto;
-            padding: 2rem;
+            padding: 3rem 2rem;
         }
 
         .section {
             background: white;
             margin: 2rem 0;
             padding: 2.5rem;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.07);
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+            border: 1px solid #f0f0f0;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .section:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
         }
 
         .section h2 {
-            color: #667eea;
-            font-size: 2rem;
+            color: #2c3e50;
+            font-size: 1.75rem;
             margin-bottom: 1.5rem;
-            border-bottom: 3px solid #667eea;
-            padding-bottom: 0.5rem;
+            font-weight: 600;
+            letter-spacing: -0.3px;
         }
 
         .section p {
-            font-size: 1.1rem;
-            margin-bottom: 1rem;
-            color: #555;
+            font-size: 1.05rem;
+            margin-bottom: 1.2rem;
+            color: #4a5568;
             text-align: left;
         }
 
         .hero-image {
             width: 100%;
-            height: 400px;
-            background: linear-gradient(rgba(102, 126, 234, 0.3), rgba(118, 75, 162, 0.3)),
-                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400"><rect fill="%23667eea" width="1200" height="400"/><path fill="%23764ba2" opacity="0.3" d="M0,200 Q300,100 600,200 T1200,200 L1200,400 L0,400 Z"/><circle fill="%23fff" opacity="0.1" cx="200" cy="100" r="80"/><circle fill="%23fff" opacity="0.1" cx="800" cy="150" r="60"/><circle fill="%23fff" opacity="0.1" cx="1000" cy="80" r="100"/><path stroke="%23fff" stroke-width="3" fill="none" opacity="0.2" d="M100,300 Q300,250 500,300 T900,300"/><text x="600" y="220" font-family="Arial" font-size="80" fill="%23fff" opacity="0.15" text-anchor="middle">🌍</text></svg>');
+            height: 450px;
+            background-image: url('images/index.jpg');
             background-size: cover;
             background-position: center;
-            border-radius: 10px;
-            margin-bottom: 2rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 6rem;
+            border-radius: 8px;
+            margin-bottom: 2.5rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            overflow: hidden;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         .contact-info {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 1.5rem;
+            background: #f8f9fa;
+            color: #2c3e50;
+            padding: 1.8rem;
             border-radius: 8px;
             text-align: center;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
+            border-left: 4px solid #667eea;
         }
 
         .contact-info a {
-            color: white;
+            color: #667eea;
             text-decoration: none;
-            font-weight: 600;
-            border-bottom: 2px solid white;
-            padding-bottom: 2px;
-            transition: opacity 0.3s ease;
+            font-weight: 500;
+            transition: color 0.3s ease;
         }
 
         .contact-info a:hover {
-            opacity: 0.8;
+            color: #764ba2;
+            text-decoration: underline;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            margin-bottom: 1rem;
+            color: #4a5568;
+            padding-left: 1.5rem;
+            position: relative;
+            line-height: 1.8;
+        }
+
+        ul li::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
         }
 
         footer {
             text-align: center;
-            padding: 2rem;
-            color: #666;
+            padding: 3rem 2rem;
+            color: #999;
             font-size: 0.9rem;
+            border-top: 1px solid #e8e8e8;
+            margin-top: 4rem;
+            background: #fafafa;
         }
 
         @media (max-width: 768px) {
@@ -128,7 +166,6 @@
 
             .hero-image {
                 height: 250px;
-                font-size: 4rem;
             }
         }
     </style>
@@ -141,43 +178,30 @@
 
     <div class="container">
         <section class="section">
-            <div class="hero-image">🌍</div>
+            <div class="hero-image"></div>
             
-            <h2>Vision</h2>
+            <h2>About This Blog</h2>
             <p>
-                Welcome to my corner of the internet! I'm Will, and this is where I share my journey as I walk through the world—both literally and figuratively.
+                Welcome to my corner of the internet! Here I document my travels, reflections, and experiences from around the world.
             </p>
-            <p>
-                The name "Will Walking the World" carries a double meaning: it's about <strong>Will</strong> (that's me) exploring our beautiful planet, and it's also about the <strong>will</strong> to keep moving forward, to discover new places, cultures, and perspectives.
-            </p>
-            <p>
-                Through this space, I aim to document and share:
-            </p>
-            <ul style="margin-left: 2rem; margin-bottom: 1rem; color: #555;">
-                <li style="margin-bottom: 0.5rem;">🌏 <strong>My travels</strong> and adventures across different corners of the world</li>
-                <li style="margin-bottom: 0.5rem;">📸 <strong>Visual stories</strong> capturing the beauty and diversity of our planet</li>
-                <li style="margin-bottom: 0.5rem;">💭 <strong>Personal reflections</strong> on experiences, cultures, and the people I meet along the way</li>
-                <li style="margin-bottom: 0.5rem;">✍️ <strong>Stories and insights</strong> that inspire curiosity and connection</li>
+            <ul>
+                <li><strong>🌏 Travels</strong> - Recording amazing moments exploring different corners of the world</li>
+                <li><strong>📸 Visual Stories</strong> - Capturing the beauty and diversity of our planet through the lens</li>
+                <li><strong>💭 Personal Reflections</strong> - Sharing thoughts on experiences, cultures, and the people I meet along the way</li>
+                <li><strong>✍️ Stories and Insights</strong> - Hoping these words inspire curiosity and connection</li>
             </ul>
-            <p>
-                Whether you're a fellow traveler, an armchair explorer, or simply curious about the world, I hope my experiences resonate with you and perhaps inspire your own adventures. This is more than a blog—it's a collection of moments, memories, and musings from someone who believes that the world is meant to be explored.
-            </p>
-            <p>
-                Join me as I continue this journey, one step at a time.
-            </p>
         </section>
 
         <section class="section">
             <h2>Get in Touch</h2>
             <div class="contact-info">
-                <p>Have questions, suggestions, or just want to say hello?</p>
-                <p>Reach out at: <a href="mailto:contact@willshi.com">contact@willshi.com</a></p>
+                <p>Feel free to reach out: <a href="mailto:contact@willshi.com">contact@willshi.com</a></p>
             </div>
         </section>
     </div>
 
     <footer>
-        <p>&copy; 2024 Will Walking the World. All rights reserved.</p>
+        <p>&copy; 2025 Will Walking the World. All rights reserved.</p>
     </footer>
 </body>
 </html>
